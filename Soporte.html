@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--
+    Code by TheWaterBoo
+    Yep, and 100% certified by one-hundred ghosts (~ 0 u 0 )~
+    copy of the index
+-->
+<head>
+    <!--HTML con informacion de contacto, esta de relleno por ahora pero luego se le dara mas info :p-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css" as="style">
+    <!--Cool font 8)-->
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <!--Icono para la pestaña-->
+    <link rel="icon" href="img/GhostIcon.png">
+    <title>Water's Store</title>
+</head>
+
+<body>
+
+    <!--Se invoca al script para agregar texto al momento de que copian algo-->
+    <script src="js/txtcopy.js"></script>
+
+    <header class="header">
+        <!--LOGO aqui-->
+        <a href="otherindex.php">
+            <img class="header__logo" src="img/LogoBeta.png" alt="Logo">
+        </a>
+        <!--
+            //Antiguo "Logo" temporal, reemplazado por un imagen en lugar de texto y una imagen
+            <a href="index.html"><img src="GhostIcon.png" width="9%"><h1>Water's Store</h1></a>
+        -->
+    </header>
+
+    <nav class="barra-nav">
+        <!--No es necesario establecer el tamaño de cada imagen, desde estilos con su correspondiente clase esta declarado eso c:-->
+        <!--OJO: SE REQUIERE INTERNET PARA CARGAR LOS ICONOS DE CADA APARTADO-->
+        <a class="barra-nav__link " href="otherindex.php"><img class="alinearImg" alt="Tienda" src="img/shopping-bag.png"/> Tienda</a>
+        <a class="barra-nav__link barra-nav__link--active" href="Soporte.html"><img class="alinearImg" alt="Support" src="img/Support-selected.png"/> Soporte</a>
+        <a class="barra-nav__link " href="register.php"><img class="alinearImg" src="img/add-user.png" alt="signup"> Sign up</a>
+        <a class="barra-nav__link " href="login.php"><img class="alinearImg" src="img/login.png" alt="login"> Login</a>
+    </nav>
+
+    <main class="contenido">
+        <h1><b>Contactanos</b></h1>
+
+        <div class="soporte">
+            <div class="soporte__contenido">
+                <p>Somos una pequeña tienda que recien empieza en los negocios, 
+                    ofrecemos de las mejores camisas customizadas por nosotros mismos,
+                    por el momento nuestro catalogo es pequeño pero conforme avancemos
+                    iremos expandiendo nuestro catalogo 
+                </p>    
+                <p>
+                    Puedes contactarnos enviando un correo a: <br>
+                    thedrasticpower@gmail.com <br>
+                    cualquier duda nosotros te la resolveremos
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt vitae mauris vel facilisis.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt vitae mauris vel facilisis.
+                </p>
+            </div>
+            <img class="soporte__img" src="img/AboutUs.png" alt="friendlyGhost">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+            <script>
+                    var rand
+                    rand = Math.round(Math.random()*50000)
+                    document.write("Con un total de "+rand+" vistas esta semana!!")
+            </script>
+        </p>
+        <p class="footer__text"><img src="img/GhostIcon.png" alt="boo" class="alinearImg"> TheWaterBoo - Todos los derechos reservados 2022. <img src="img/GhostIcon.png" alt="boo" class="alinearImg"></p>
+    </footer>
+    
+</body>
+
+</html>

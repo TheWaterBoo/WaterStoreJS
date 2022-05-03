@@ -1,0 +1,16 @@
+---------------------------------------------------------------------------
+SI SE DESEA VER LA TIENDA CON PHP IMPLEMENTADO ENTONCES DEBE DE ABRIR otherindex.php
+RECUERDE TENER LA BASE DE DATOS IMPORTADA EN PHPMYADMIN, DE LO CONTRARIO NO FUNCIONARA DEL TODO LA COMPRA DE PRODUCTOS EN LA PAGINA
+LA BASE DE DATOS SE LLAMA water_store.sql Y SE ENCUENTRA EN LA CARPETA RAIZ
+
+SI QUIERE HACER CAMBIOS EN LA BASE DE DATOS PUEDE ABRIR LA CARPETA php Y ENCONTRARA LOS SIGUIENTES ARCHIVOS
+altaproducto.html PARA DAR DE ALTA UN PRODUCTO
+eliminaproducto.php PARA ELIMUNAR UN PRODUCTO DE LA BASE DE DATOS
+cambiaproducto.html PARA HACER CAMBIOS EN CIERTO PRODUCTO
+
+---------------------------------------------------------------------------
+SI DESEA SOLO VER LA PAGINA CON ESTILOS ENTONCES ABRA index.html
+PARA ESTE HTML NO ES NECESARIO IMPORTAR NINGUNA BASE DE DATOS, SOLO ES VISUAL
+---------------------------------------------------------------------------
+
+Code by thewaterboo (Pedro c:)

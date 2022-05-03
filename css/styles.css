@@ -1,0 +1,362 @@
+:root{
+  /*Muchos colores para no decidirme por ninguno en concreto >.< */
+  --blanco: #FFFFFF;
+  --negro: #000000;
+  --azulcian: #00A0E3;
+  --salmon: #F28773;
+  --gris: #9B9B9B;
+  --crayolablue: #80CEE1;
+  --azulceleste: #2271b3;
+  --grisroca: #8D948D;
+  --grisgrafito: #474A51;
+  --verdebrilla: #00BB2D;
+  --verde: #089603;
+  --rojo: #FF0000;
+}
+
+html{
+  font-size: 70.5%;
+  box-sizing: border-box;
+}
+
+*, *:before,*:after{
+  box-sizing: inherit;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: 'Hubballi', Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to top, var(--grisroca) 5%, var(--blanco) 50%);
+  background-color: var(--blanco);
+}
+
+.phpplantilla{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: none;
+}
+
+h1 {
+  font-size: 3.0rem;
+  text-align: center;
+  font-weight: 1%;
+}
+
+p{
+  font-size: 2.2rem;
+  color: var(--negro);
+}
+
+p.warn{
+  font-size: 1.7rem;
+  color: var(--rojo);
+}
+
+p.other{
+  font-size: 1.7rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+.contenido{
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.contenido__registro{
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo{
+  margin: 1rem 0;
+  width: 29rem;
+}
+
+/* Ya no es necesario este codigo, comentado para cualquier caso
+@media (min-width: 768px){
+  img.logoTitle{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+    min-width: 10rem;
+  }
+}
+
+img.logoTitle{
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  padding: .5rem;
+} */
+
+/*↓ Use esto para centar el texto del logo viejo, en realidad ya no es necesario pero igual lo comento
+.logoTitle a{
+  text-decoration: none;
+  color: var(--azulcian);
+}
+*/
+
+.barra-nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--grisroca);
+}
+
+@media (min-width: 768px) {
+  .barra-nav{
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.barra-nav__link{
+  display: block;
+  text-align: center;
+  color: var(--negro);
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 1rem;
+  transition: color, background-color, border-radius, .3s ease;
+}
+
+/*Color para seleccion de la barra, para que se vea bonito*/
+.barra-nav__link--active{
+  color: var(--verdebrilla);
+  background-color: var(--grisgrafito);
+  border-radius: 2rem;
+}
+
+.barra-nav__link:hover{
+  background-color: var(--grisgrafito);
+  color: var(--verdebrilla);
+  border-radius: 2rem;
+}
+
+/*Evita que sea vea mal alineada una imagen al lado del texto, ejemplo en la barra de navegacion*/
+@media (min-width: 768px){
+  img.alinearImg{
+    /*image-rendering: auto;*/
+    vertical-align: middle;
+    min-width: 3.4rem;
+  }
+}
+
+img.alinearImg{
+  vertical-align: text-bottom;
+  flex-direction: column;
+  max-width: 2.8rem;
+}
+
+.footer{  
+  padding: .01rem 0rem;
+  margin-top: 2rem;
+}
+
+/*Pie de la pagina */
+.footer__text{
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--negro);
+  font-weight: lighter;
+}
+
+/*grid*/
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media(min-width: 768px){
+  .grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.product{
+  background-color: var(--grisroca);
+  padding: 1rem;
+  border-radius: 1rem;
+  /*Para las sombras de las cajas c:*/
+  -webkit-box-shadow: 0px 15px 25px 0px rgba(112, 112, 112, 0.54);
+  -moz-box-shadow: 0px 15px 25px 0px rgba(112, 112, 112, 0.54);
+  box-shadow: 0px 15px 25px 0px rgba(112, 112, 112, 0.54);
+  transition: background-color .3s ease;
+}
+
+.boton__center{
+  /*centra los botones*/
+  display: flex;
+  justify-content: center;
+}
+
+div.form-element {
+  margin: 20px 0;
+}
+
+input[type=submit]{
+  background-image: url(/ProyWebPHP/img/shopping-cart32px.png);
+  /*evita que se repite la imagen, que de hecho es una imagen de fondo*/
+  background-repeat: no-repeat;
+  /*indica la posicion de la imagen del carrito*/
+  background-position: .5rem;
+  
+}
+
+.boton{
+  background-color: var(--grisroca);
+  padding: 1.1rem;
+  font-weight: bold;
+  /*para darle bordeado al boton, asi no se ve tan cuadrado*/
+  border-radius: .5rem;
+  font-size: 1.9rem;
+  /*Obsoletos*/
+  /*-webkit-appearance: button;*/
+  /*-moz-appearance: button;*/
+  appearance: button; /*Le estoy dando aparencia de boton a un tipo submit*/
+  text-decoration: none;
+  transition: background-color .3s ease;
+  cursor: pointer;
+  width: 15rem;
+}
+
+.boton:hover{
+  background-color: var(--grisgrafito);
+}
+
+/*.product:hover{
+  background-color: var(--grisgrafito);
+}*/
+
+.product__img{
+  width: 100%;
+}
+
+.product__price,
+.product__name{
+  margin: 1rem 0;
+  text-align: center;
+  line-height: 1.2;
+  color: var(--negro);
+}
+
+.product__price{
+  font-size: 3.0rem ;
+  font-weight: bolder;
+  color: var(--verde);
+}
+
+.soporte{
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px){
+  .soporte{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.soporte__img{
+  grid-row: 1 / 2;
+  width: 100%;
+  max-width: 25.5rem;
+}
+
+@media (min-width: 768px){
+  .soporte__img{
+    grid-column: 2 / 3;
+    min-width: 15.4rem;
+  }
+@media(min-width: 768px){
+  .camisa{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}  
+
+.camisa__imagen{
+    width: 100%;
+  }
+}
+
+.formulario{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.formulario__campo{
+  /*border-color: var(--grisgrafito);
+  border-width: 1rem;
+  border-style: solid;*/
+
+  border: 1rem solid var(--grisgrafito);
+  background-color: transparent;
+  color: var(--negro);
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  appearance: none;
+}
+
+.formulario__submit{
+  background-color: var(--verde);
+  border: none;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: background-color, font-size .3s ease;
+  grid-column: 1 / 3;
+  width: 20rem;
+}
+
+.button__disabled{
+  background-color: var(--grisgrafito);
+  color: var(--negro);
+  border: none;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  grid-column: 1 / 3;
+  width: 20rem;
+  cursor: not-allowed;
+}
+
+.formulario__submit:hover{
+  font-size: 1.7rem;
+  cursor: pointer;
+  background-color: var(--verdebrilla);
+}
+
+.tablaphp{
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 1.4rem;
+  border: 3px solid;
+}
+
+th,td{
+  padding: 1rem;
+}
